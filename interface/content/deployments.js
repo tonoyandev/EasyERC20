@@ -1,23 +1,12 @@
-import { mainnet, polygon, optimism, arbitrum, bsc, polygonMumbai } from "wagmi/chains";
+import { mainnet, bsc, polygon, optimism, arbitrum , polygonMumbai } from "wagmi/chains";
 
-export const FACTORY_ADDRESS = '0x169070404943a4df770beeb47a83063806f62597'
+export const PEAK_TOKEN_ADDRESS = '0x630d98424eFe0Ea27fB1b3Ab7741907DFFEaAd78'
 
-export const CHAINS = process.env.NEXT_PUBLIC_TESTNET === "1" ? [
+export const CHAINS =  [
   {
-    name: "Polygon Mumbai",
-    wagmi: polygonMumbai,
-    explorer: 'https://mumbai.polygonscan.com/'
-  }
-] : [
-  // {
-  //   name: "Ethereum",
-  //   wagmi: mainnet,
-  //   explorer: 'https://etherscan.io/'
-  // },
-  {
-    name: "Polygon",
-    wagmi: polygon,
-    explorer: 'https://polygonscan.com/'
+    name: "Ethereum",
+    wagmi: mainnet,
+    explorer: 'https://etherscan.io/'
   },
   // {
   //   name: "Optimism",
@@ -29,9 +18,9 @@ export const CHAINS = process.env.NEXT_PUBLIC_TESTNET === "1" ? [
   //   wagmi: arbitrum,
   //   explorer: 'https://arbiscan.io/'
   // },
-  // {
-  //   name: "BSC",
-  //   wagmi: bsc,
-  //   explorer: 'https://bscscan.com/'
-  // }
+  {
+    name: "BSC",
+    wagmi: bsc,
+    explorer: 'https://bscscan.com/'
+  }
 ]

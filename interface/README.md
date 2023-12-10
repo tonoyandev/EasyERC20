@@ -1,5 +1,5 @@
-# EasyERC20 Interface
+# PEAKDEFI Burner Interface
 
-Web interface for EasyERC20.
+Web interface for PEAKDEFI Burner.
 
-[https://easyerc20.com](https://easyerc20.com)
+[https://PEAKDEFI Burner.com](https://PEAKDEFI Burner.com)

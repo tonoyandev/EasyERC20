@@ -10,9 +10,8 @@ export default function NetworkSelector() {
 
   return (
     <div>
-      <h3 className='font-medium text-lg mt-4'>Blockchain</h3>
       {CHAINS.map((chain, i) => (
-        <div key={i}>
+        <span key={i}>
           <input
             type='radio'
             name='chain'
@@ -23,7 +22,7 @@ export default function NetworkSelector() {
             className='mr-1'
           />
           <label htmlFor={chain.wagmi.id} className='mr-4'>{chain.name}</label>
-        </div>
+        </span>
       ))}
     </div>
   )

@@ -1,6 +1,6 @@
 export default function NumberInput({ value = 0, onChange = () => { }, label = null, disabled = false }) {
   return (
-    <div className="mt-2">
+    <div className="mb-2 mt-4">
       {label && (
         <label className="block font-medium text-lg mb-2">
           {label}

@@ -5,7 +5,7 @@ import { CHAINS } from "../content/deployments"
 
 const client = createClient(
   getDefaultClient({
-    appName: "EasyERC20",
+    appName: "PEAKDEFI Burner",
     chains: CHAINS.map(chain => chain.wagmi)
   })
 )
