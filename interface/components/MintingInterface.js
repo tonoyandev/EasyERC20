@@ -10,7 +10,7 @@ import { PEAK_TOKEN_ABI } from '../content/factoryABI'
 
 
 export default function MintingInterface() {
-  const { isConnected } = useAccount()
+  const { address, isConnected } = useAccount()
   const [loaded, setLoaded] = useState(false)
   const [supply, setSupply] = useState('0')
   const [waiting, setWaiting] = useState(false)
@@ -31,16 +31,16 @@ export default function MintingInterface() {
   }
 
   async function deploy() {
-    console.log('deploying token')
     setWaiting(true)
 
     try {
+      console.log()
        await writeContract({
         mode: 'recklesslyUnprepared',
         address: PEAK_TOKEN_ADDRESS,
         abi: PEAK_TOKEN_ABI,
         functionName: 'mint',
-        args: [supply + "0".repeat(8)]
+        args: [address, supply + "0".repeat(8)]
       })
 
       setMinted(true)
