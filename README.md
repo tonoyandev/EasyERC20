@@ -1,1 +1,1 @@
-
+# PEAKDEFI burner UI (simplified)
