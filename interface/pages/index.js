@@ -18,7 +18,10 @@ export default function Home() {
             <div className='p-8'>
               <div className='p-8 flex flex-col justify-center items-center'>
                 <h1 className='text-4xl font-medium text-center mb-2'>PEAKDEFI Minter 👼</h1>
-                <p className='text-center'>{DESCRIPTION}</p>
+                <p className='text-center mb-5'>{DESCRIPTION}</p>
+                <a className='underline text-blue-600 hover:text-blue-800 visited:text-purple-600' href='https://peak-burner.netlify.app/'>
+                  I want to burn!
+                </a>
               </div>
             </div>
             <div className='flex flex-col justify-center items-center p-8'>
