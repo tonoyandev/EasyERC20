@@ -1,0 +1,14 @@
+[build]
+  # Specify the base directory of the Next.js app
+  base = "interface/"
+
+  # Specify the build command to be run in the base directory
+  command = "npm run build"
+
+  # Set the directory to publish. If you're using 'next export', it should be 'out'
+  # If you are not using 'next export' and have server-side features, it should be '.next'
+  publish = "interface/out"
+
+  # Environment variables can be added here if needed
+  [build.environment]
+    NODE_VERSION = "16.15.0"
