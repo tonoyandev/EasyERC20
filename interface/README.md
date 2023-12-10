@@ -1,5 +1,5 @@
-# PEAKDEFI Burner Interface
+# PEAKDEFI Minter Interface
 
-Web interface for PEAKDEFI Burner.
+Web interface for PEAKDEFI Minter.
 
 [https://PEAKDEFI Burner.com](https://PEAKDEFI Burner.com)

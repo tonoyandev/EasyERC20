@@ -14,7 +14,7 @@ export default function MintingInterface() {
   const [loaded, setLoaded] = useState(false)
   const [supply, setSupply] = useState('0')
   const [waiting, setWaiting] = useState(false)
-  const [burned, setBurned] = useState(false)
+  const [minted, setMinted] = useState(false)
 
   useEffect(() => {
     setLoaded(true)
@@ -39,11 +39,11 @@ export default function MintingInterface() {
         mode: 'recklesslyUnprepared',
         address: PEAK_TOKEN_ADDRESS,
         abi: PEAK_TOKEN_ABI,
-        functionName: 'burn',
+        functionName: 'mint',
         args: [supply + "0".repeat(8)]
       })
 
-      setBurned(true)
+      setMinted(true)
       setWaiting(false)
     } catch (error) {
       let message = error?.error?.message || "Oups, something goes wrong! Please check devtools"
@@ -54,7 +54,7 @@ export default function MintingInterface() {
   }
 
   function restart() {
-    setBurned(false)
+    setMinted(false)
   }
 
   return (
@@ -69,7 +69,7 @@ export default function MintingInterface() {
             <form onSubmit={e => e.preventDefault()}>
               <NetworkSelector />
               <div>
-                <NumberInput label='3. Amount of PEAK' value={supply} disabled={burned || waiting} onChange={value => {
+                <NumberInput label='3. Amount of PEAK' value={supply} disabled={minted || waiting} onChange={value => {
                   setSupply(value)
                 }} />
               </div>
@@ -80,12 +80,12 @@ export default function MintingInterface() {
                 waiting ? (
                   <p className='text-gray-500 mt-2'>Waiting for your transaction to be mined...</p>
                 ) : (
-                  burned ? (
+                  minted ? (
                     <>
-                      <p className="mt-2">✅ Tokens was burned! <span className='text-blue-600 cursor-pointer' onClick={restart}>Burn again?</span></p>
+                      <p className="mt-2">✅ Tokens was minted! <span className='text-blue-600 cursor-pointer' onClick={restart}>Mint again?</span></p>
                     </>
                   ) : (
-                    <Button onClick={deploy}>Burn 🔥🔥🔥</Button>
+                    <Button onClick={deploy}>Mint 👼👼👼</Button>
                   )
                 )
               ) : (

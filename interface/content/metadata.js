@@ -1,2 +1,2 @@
-export const NAME = "PEAKDEFI Burner"
-export const DESCRIPTION = "Burn PEAK tokens via proxy contract"
+export const NAME = "PEAKDEFI Minter"
+export const DESCRIPTION = "Mint PEAK tokens via proxy contract"

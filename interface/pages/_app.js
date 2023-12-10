@@ -5,7 +5,7 @@ import { CHAINS } from "../content/deployments"
 
 const client = createClient(
   getDefaultClient({
-    appName: "PEAKDEFI Burner",
+    appName: "PEAKDEFI Minter",
     chains: CHAINS.map(chain => chain.wagmi)
   })
 )

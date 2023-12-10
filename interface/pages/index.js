@@ -17,7 +17,7 @@ export default function Home() {
           <div className='min-h-screen grid grid-cols-1 lg:grid-cols-2 p-10 bg-gray-200'>
             <div className='p-8'>
               <div className='p-8 flex flex-col justify-center items-center'>
-                <h1 className='text-4xl font-medium text-center mb-2'>PEAKDEFI Burner 🔥</h1>
+                <h1 className='text-4xl font-medium text-center mb-2'>PEAKDEFI Minter 👼</h1>
                 <p className='text-center'>{DESCRIPTION}</p>
               </div>
             </div>
