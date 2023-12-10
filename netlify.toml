@@ -12,3 +12,4 @@
   # Environment variables can be added here if needed
   [build.environment]
   NODE_VERSION = "16.15.0"
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
