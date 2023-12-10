@@ -7,8 +7,8 @@
 
   # Set the directory to publish. If you're using 'next export', it should be 'out'
   # If you are not using 'next export' and have server-side features, it should be '.next'
-  publish = "interface/out"
+  publish = "out"
 
   # Environment variables can be added here if needed
   [build.environment]
-    NODE_VERSION = "16.15.0"
+  NODE_VERSION = "16.15.0"
