@@ -85,7 +85,7 @@ export default function MintingInterface() {
                       <p className="mt-2">✅ Tokens was burned! <span className='text-blue-600 cursor-pointer' onClick={restart}>Burn again?</span></p>
                     </>
                   ) : (
-                    <Button onClick={deploy}>Burn</Button>
+                    <Button onClick={deploy}>Burn 🔥🔥🔥</Button>
                   )
                 )
               ) : (
